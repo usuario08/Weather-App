@@ -1,0 +1,107 @@
+.about {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-areas: "columna1 columna2 columna3";
+  border-radius: 10px;
+  font-family: candara;
+}
+@media only screen and (max-width: 500px) {
+  .about {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "columna1"
+      "columna2"
+      "columna3";
+    background-color: #4592daaf;
+    border-radius: 10px;
+    font-family: candara;
+  }
+  .col1 {
+    grid-area: columna1;
+    font-size: 3em;
+    height: 100%;
+    padding: 10px;
+    align-self: center;
+    background-color: #000117af;
+  }
+}
+.col1 {
+  height: 100%;
+  grid-area: columna1;
+  font-size: 4em;
+  padding: 10px;
+  align-self: center;
+  background-color: #000117af;
+  border-radius: 10px 0px 0px 10px;
+}
+.p1 {
+  color: #1cedae;
+}
+.p2 {
+  color: #74efff;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 13ch;
+
+  animation: typing 2s steps(13), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+.col3 {
+  color: #1cedae;
+  font-size: 20px;
+  padding: 10px 10px 10px 15px;
+  background-color: #000117af;
+  border-radius: 0px 10px 10px 0px;
+}
+.col3 li {
+  padding-left: 20px;
+  padding-top: 3px;
+}
+.js {
+  background: url("/src/img/js.png") center left no-repeat;
+}
+.html {
+  background: url("/src/img/html-5.png") center left no-repeat;
+}
+.css {
+  background: url("/src/img/css-3.png") center left no-repeat;
+}
+.react {
+  background: url("/src/img/physics.png") center left no-repeat;
+}
+.reactrouter {
+  background: url("/src/img/atom.png") center left no-repeat;
+}
+.api {
+  background: url("/src/img/code.png") center left no-repeat;
+}
+.col3 ul {
+  list-style-type: none;
+}
+.col2 {
+  grid-area: columna2;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #3bd6ebaf;
+  color: #000117;
+  align-self: center;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
